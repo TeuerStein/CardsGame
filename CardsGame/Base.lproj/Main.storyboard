@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -25,7 +26,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmx-g9-P1L">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -34,7 +35,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j6-VW-n4t">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -43,7 +44,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-C6-n5a">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -57,7 +58,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="800-eL-yCJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -66,7 +67,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en4-A4-127">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -75,7 +76,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-Gb-sor">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -89,7 +90,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60w-ZE-aG5">
                                                 <rect key="frame" x="0.0" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -98,7 +99,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Int-Vd-zNO">
                                                 <rect key="frame" x="117" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -107,7 +108,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-M1-cxb">
                                                 <rect key="frame" x="234" y="0.0" width="109" height="72"/>
-                                                <color key="backgroundColor" red="0.74375754589999998" green="0.15871617199999999" blue="0.073504663999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
@@ -157,6 +158,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

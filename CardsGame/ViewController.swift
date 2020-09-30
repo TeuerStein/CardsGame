@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var game = Concentration(numberOfPairsCards: (cardButtons.count + 1) / 2)
+    lazy var game = Concentration(numberOfPairsCards: numberOfPairsOfCards)
+    
+    var numberOfPairsOfCards: Int {
+        return (cardButtons.count + 1) / 2
+    }
     
     var flipCount = 0 {
         didSet{
@@ -38,10 +42,10 @@ class ViewController: UIViewController {
             
             if card.isFaceUp{
                 button.setTitle(emoji(for: card), for: UIControl.State.normal)
-                button.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+                button.backgroundColor = #colorLiteral(red: 1, green: 0.7254263722, blue: 0.06482876635, alpha: 1)
             } else {
                 button.setTitle("", for: UIControl.State.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 0) : #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 0) : #colorLiteral(red: 0.146371305, green: 0.556142509, blue: 1, alpha: 1)
             }
         }
     }
