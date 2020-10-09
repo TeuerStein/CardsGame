@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VIL-p0-6op">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SyT-9I-swU">
     <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="1Hl-6c-DQV" customClass="ConcentrationThemeChooserViewController" customModule="CardsGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5IM-Am-XdL">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN5-MO-LKO">
-                                <rect key="frame" x="179" y="687" width="162" height="42"/>
+                                <rect key="frame" x="431" y="662" width="162" height="42"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,10 +42,62 @@
             </objects>
             <point key="canvasLocation" x="-769.56521739130437" y="-25.446428571428569"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Item 2-->
+        <scene sceneID="AxN-Tp-eNX">
+            <objects>
+                <viewController id="6zy-W1-ytW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YbJ-ID-e0N">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vBL-jm-rnd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="fGY-29-vGa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTg-Qy-VOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3873" y="681"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="n4t-ik-zvf">
+            <objects>
+                <viewController id="uHW-gE-M5J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfH-Ck-YB4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6yF-96-d8S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="QAc-AR-l3G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WR0-o5-8Q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3873" y="79"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fma-ii-ZGu">
+            <objects>
+                <tabBarController id="SyT-9I-swU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0g5-bg-jCq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VIL-p0-6op" kind="relationship" relationship="viewControllers" id="PHZ-ZK-ePt"/>
+                        <segue destination="uHW-gE-M5J" kind="relationship" relationship="viewControllers" id="0Qc-fE-z5v"/>
+                        <segue destination="6zy-W1-ytW" kind="relationship" relationship="viewControllers" id="ALB-Tv-vey"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dn4-OI-wew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2927" y="812"/>
+        </scene>
+        <!--Concentration-->
         <scene sceneID="rju-PR-tIq">
             <objects>
                 <splitViewController allowDoubleColumnStyle="YES" id="VIL-p0-6op" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Concentration" id="FGe-Zq-D4A"/>
                     <navigationItem key="navigationItem" id="Ffs-AM-SMF"/>
                     <connections>
                         <segue destination="SA4-2T-gLN" kind="relationship" relationship="masterViewController" id="6Ax-xk-194"/>
@@ -166,7 +218,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOI-KP-7A4">
-                                <rect key="frame" x="451" y="1298" width="122.5" height="48"/>
+                                <rect key="frame" x="451" y="1248" width="122.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -207,7 +259,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SA4-2T-gLN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XsR-m9-0MK">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
