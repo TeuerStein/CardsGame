@@ -17,7 +17,7 @@ class ConcentrationThemeChooserViewController: UIViewController, UISplitViewCont
     override func awakeFromNib() {
         splitViewController?.delegate = self
     }
-    @IBAction func chooseTheme(_ sender: Any) {
+    @IBAction func changeTheme(_ sender: Any) {
         if let cvc = splitViewDetailConcentrationViewController {
             if let themeName = (sender as? UIButton)?.currentTitle, let theme = themes[themeName] {
                 cvc.theme = theme

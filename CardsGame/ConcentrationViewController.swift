@@ -43,22 +43,22 @@ class ConcentrationViewController: UIViewController {
         if let cardNumber = cardButtons.firstIndex(of: sender){
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
-        } else {
-            print("chosen card was not in cardButton")
         }
     }
     
     private func updateViewFromModel(){
-        for index in cardButtons.indices{
-            let button = cardButtons[index]
-            let card = game.cards[index]
-            
-            if card.isFaceUp{
-                button.setTitle(emoji(for: card), for: UIControl.State.normal)
-                button.backgroundColor = #colorLiteral(red: 1, green: 0.7254263722, blue: 0.06482876635, alpha: 1)
-            } else {
-                button.setTitle("", for: UIControl.State.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 0) : #colorLiteral(red: 0.146371305, green: 0.556142509, blue: 1, alpha: 1)
+        if cardButtons != nil {
+            for index in cardButtons.indices{
+                let button = cardButtons[index]
+                let card = game.cards[index]
+                
+                if card.isFaceUp{
+                    button.setTitle(emoji(for: card), for: UIControl.State.normal)
+                    button.backgroundColor = #colorLiteral(red: 1, green: 0.7254263722, blue: 0.06482876635, alpha: 1)
+                } else {
+                    button.setTitle("", for: UIControl.State.normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 0) : #colorLiteral(red: 0.146371305, green: 0.556142509, blue: 1, alpha: 1)
+                }
             }
         }
     }
